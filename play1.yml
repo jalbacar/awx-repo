@@ -1,11 +1,11 @@
 ---
 
 - name: Play de prueba
-  hosts: app_servers
+  hosts: web_servers
   gather_facts: true
 
   tasks:
     - name: "Mostrar datos de ansible facts"
       debug:
-        msg: "Me estoy conectando al nodo {{ ansible_nodename }}"
+        msg: "Nodo de conexion:{{ ansible_nodename }}"
     
