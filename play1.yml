@@ -1,0 +1,11 @@
+---
+
+- name: Play de prueba
+  hosts: ubuntu1
+  gather_facts: true
+
+  tasks:
+    - name: "Mostrar datos de ansible facts"
+      debug:
+        msg: "Me estoy conectando al nodo {{ ansible_nodename }}"
+    
