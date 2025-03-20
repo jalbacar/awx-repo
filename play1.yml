@@ -1,7 +1,7 @@
 ---
 
 - name: Play de prueba
-  hosts: ubuntu1
+  hosts: ubuntu1_b
   gather_facts: true
 
   tasks:
