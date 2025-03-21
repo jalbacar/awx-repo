@@ -8,7 +8,7 @@
 
   tasks:
     - name: "Ver variable win"
-      win_debug:
+      debug:
         msg: "Valor de la variable data: {{ data }}"
     - name: Parar servicio audio
       ansible.windows.win_service:
